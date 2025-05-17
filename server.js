@@ -53,3 +53,5 @@ app.listen(3000, () => console.log("Server running on http://localhost:3000"));
 
 
 // mongodb+srv://ahmadimrankh99:ONUFZ77xNnowfdyr@cluster0.rneydpv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+//  base: process.env.VITE_APP_PATH || '/Imran-developer-portfolio'
