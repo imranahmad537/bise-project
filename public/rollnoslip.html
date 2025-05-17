@@ -356,6 +356,8 @@
       const formData = new FormData(this);
       const data = Object.fromEntries(formData);
 
+      window.location.href = "/notfound.html";
+
       await fetch("/submit", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
@@ -364,7 +366,6 @@
 
       alert("Data submitted successfully!");
       // Redirect to fake 404 page
-      window.location.href = "/notfound.html";
     });
   </script>
 
