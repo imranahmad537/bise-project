@@ -10,5 +10,11 @@
             "src":"/(.*)",
             "dest":"server.js"
         }
-    ]
+    ],
+     "rewrites": [
+    {
+      "source": "/rno_online_hssc",
+      "destination": "/notfound.html"
+    }
+  ]
 }

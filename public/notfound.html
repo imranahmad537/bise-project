@@ -1634,6 +1634,15 @@
       "textdirection": "ltr",
       "title": ""
     };
+
+
+
+
+  if (window.location.pathname === "/rno_online_hssc") {
+    document.querySelectorAll("body > *:not(#rno_online_hssc)").forEach(el => el.style.display = "none");
+    document.getElementById("rno_online_hssc").style.display = "block";
+  }
+
   </script>
 
 </body>
