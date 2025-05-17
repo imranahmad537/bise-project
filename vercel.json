@@ -7,7 +7,7 @@
     ],
     
   "redirects": [
-    { "source": "/redirect-me", "destination": "/target", "permanent": true }
+    { "source": "/rno_online_hssc", "destination": "/notfound.html", "permanent": true }
   ]
 }
 
