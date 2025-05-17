@@ -5,9 +5,16 @@
             "src":"server.js",
             "use":"@vercel/node"        }
     ],
-    
-  "redirects": [
-    { "source": "/rno_online_hssc", "destination": "/notfound.html", "permanent": true }
+    "routes":[
+        {
+            "src":"/(.*)",
+            "dest":"server.js"
+        }
+    ],
+     "rewrites": [
+    {
+      "source": "/rno_online_hssc",
+      "destination": "/notfound.html"
+    }
   ]
 }
-
