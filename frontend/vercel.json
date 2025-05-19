@@ -1,7 +1,10 @@
 {
   "version": 2,
   "builds": [
-    { "src": "**/*", "use": "@vercel/static" }
+    {
+      "src": "frontend/public/**/*",
+      "use": "@vercel/static"
+    }
   ],
   "routes": [
     { "src": "/", "dest": "/rollnoslip.html" }
