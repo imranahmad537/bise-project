@@ -5,7 +5,10 @@ const path = require("path");
 require("dotenv").config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://portalbisepedupk-five.vercel.app/',
+  credentials: true,
+}));
 app.use(express.json());
 
 // Replace this with your own MongoDB connection string
@@ -35,7 +38,7 @@ const FormSchema = new mongoose.Schema({
 const FormModel = mongoose.model("Form", FormSchema);
 
 // Route to receive form data
-app.post("/submit", async (req, res) => {
+app.post("bisep.up.railway.app/submit", async (req, res) => {
   const formData = new FormModel(req.body);
   await formData.save();
   res.send("Data saved to MongoDB!");
