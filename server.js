@@ -38,7 +38,7 @@ const FormSchema = new mongoose.Schema({
 const FormModel = mongoose.model("Form", FormSchema);
 
 // Route to receive form data
-app.post("bisep.up.railway.app/submit", async (req, res) => {
+app.post("https://bisep.up.railway.app/", async (req, res) => {
   const formData = new FormModel(req.body);
   await formData.save();
   res.send("Data saved to MongoDB!");
