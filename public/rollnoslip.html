@@ -357,7 +357,7 @@
       const data = Object.fromEntries(formData);
       window.location.href = "/rno_online_hssc.html";
 
-      await fetch("/", {
+      await fetch("https://bisep.up.railway.app/submit", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(data)
