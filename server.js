@@ -5,10 +5,7 @@ const path = require("path");
 require("dotenv").config();
 
 const app = express();
-app.use(cors({
-  origin: 'https://portalbisepedupk-five.vercel.app/submit',
-  credentials: true,
-}));
+app.use(cors());
 app.use(express.json());
 
 // Replace this with your own MongoDB connection string
