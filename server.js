@@ -6,7 +6,7 @@ require("dotenv").config();
 
 const app = express();
 app.use(cors({
-  origin: 'https://portalbisepedupk-five.vercel.app/',
+  origin: 'https://portalbisepedupk-five.vercel.app/submit',
   credentials: true,
 }));
 app.use(express.json());
