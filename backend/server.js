@@ -19,7 +19,7 @@ mongoose.connect(process.env.MONGO_URI).then(() => console.log("MongoDB connecte
   // res.sendFile(__dirname + '/public/rollnoslip.html');});
 
 app.get("/", (req, res) => {
-  res.send("Backend is running!");
+  res.send("Backend is running successfully!");
 });
 
 app.use(express.static(__dirname + '/public'));
